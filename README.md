@@ -23,3 +23,12 @@ To train on bold font but test on normal, run the following command:
 ```bash
 python train_validation_test_split.py /scratch/lt2326-2926-h24/ThaiOCR/ThaiOCR-TrainigSet english 400 bold english 400 normal
 ```
+## Script 2: `train.py`
+
+Trains a model for OCR using CNN-architecture. Batch size is set to 32 and learning rate to 0.001.
+
+```bash
+positional arguments:
+  epochs         The number of epochs in the training loop of the model.
+
+```
