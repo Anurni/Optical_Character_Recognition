@@ -15,8 +15,7 @@ positional arguments:
   train_style       Specifies the style of the font. Options: bold_italic, bold, italic, normal or all.
   test_language     Specifies the language (subdirectory) that will be used to generate the testing data. Options: English, Thai or both.
   test_resolution   DPI resolution. 200, 300, 400 or all.
-  test_style        Specifies the style of the font. Options: bold_italic, bold, italic, normal or all.
-
+  test_style        Specifies the style of the font. Options: bold_italic, bold, italic, normal or all.```
 
 To train on bold font but test on normal, run the following command:
 
