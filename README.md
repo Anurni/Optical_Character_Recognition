@@ -5,9 +5,7 @@ Below are instructions on how to run the scripts.
 
 **1. train_validation_test_split.py**
    
-```
-
-usage: Train and test data splitting program [-h] directory train_language train_resolution train_style test_language test_resolution test_style
+```usage: Train and test data splitting program [-h] directory train_language train_resolution train_style test_language test_resolution test_style
 
 Splits the data at the diven directory into train, validation and test data. If user wishes to test their model on different resolution or style than what was used to
 generate the training data, it is possible to speficy different arguments for the testing data. If not, simply input the same arguments for the testing data. Example of how
@@ -24,14 +22,11 @@ positional arguments:
   test_style        Specifies the style of the font. Options: bold_italic, bold, italic, normal or all.
 
 options:
-  -h, --help        show this help message and exit
-
-´´´
+  -h, --help        show this help message and exit´´´
 
 **2. train.py**
 
-```
-usage: This is the training script. [-h] epochs
+```usage: This is the training script. [-h] epochs
 
 Trains a CNN model for Optical Character Recognition.
 
@@ -39,7 +34,7 @@ positional arguments:
   epochs      The number of epochs for the training loop.
 
 options:
-  -h, --help  show this help message and exit´´´
+  -h, --help  show this help message and exit ´´´
 
 
   
