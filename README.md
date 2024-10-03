@@ -25,7 +25,17 @@ options:
   -h, --help        show this help message and exit´´´
 
 
-
 **2. train.py**
+```
+usage: This is the training script. [-h] epochs
 
-**3. test.py**
+Trains a CNN model for Optical Character Recognition.
+
+positional arguments:
+  epochs      The number of epochs for the training loop.
+
+options:
+  -h, --help  show this help message and exit´´´
+
+
+  
