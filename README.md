@@ -1,4 +1,4 @@
-﻿ADVANCED MACHINE LEARNING ASSIGNMENT 1: OCR
+## ﻿ADVANCED MACHINE LEARNING ASSIGNMENT 1: OCR - Anni Nieminen
 
 This repository holds my code for assignment 1 LT2326 (OCR for Thai and English).
 Below are instructions on how to run the scripts.
