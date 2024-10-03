@@ -26,6 +26,7 @@ python train_validation_test_split.py /scratch/lt2326-2926-h24/ThaiOCR/ThaiOCR-T
 ## Script 2: `train.py`
 
 Trains a model for OCR using CNN-architecture. Batch size is set to 32 and learning rate to 0.001. Will print out running loss each epoch.
+Saves the model as a pth-file to **my_OCR_model.pth**.
 
 ```bash
 positional arguments:
@@ -37,4 +38,17 @@ Simply run by specifying the n of epochs:
 ```bash
 python train.py 10
 ```
+## Script 3: `test.py`
+
+Evaluates the model perfomance with Sklearn metrics (accuracy, precision, recall and F1). Prints out these results.
+Takes no arguments. Simply run:
+
+```bash
+python test.py
+```
+
+## Test runs, evaluation, and discussion
+
+![Results of the model](https://github.com/Anurni/Optical_Character_Recognition/blob/main/OCR_results.png)
+
 
