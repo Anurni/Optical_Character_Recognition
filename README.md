@@ -17,7 +17,6 @@ positional arguments:
   test_resolution   DPI resolution. 200, 300, 400 or all.
   test_style        Specifies the style of the font. Options: bold_italic, bold, italic, normal or all.
 
-### Example:
 
 To train on bold font but test on normal, run the following command:
 
