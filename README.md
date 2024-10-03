@@ -6,6 +6,7 @@ Below are instructions on how to run the scripts.
 **1. train_validation_test_split.py**
    
 ```
+
 usage: Train and test data splitting program [-h] directory train_language train_resolution train_style test_language test_resolution test_style
 
 Splits the data at the diven directory into train, validation and test data. If user wishes to test their model on different resolution or style than what was used to
