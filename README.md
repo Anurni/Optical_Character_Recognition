@@ -25,7 +25,7 @@ python train_validation_test_split.py /scratch/lt2326-2926-h24/ThaiOCR/ThaiOCR-T
 ```
 ## Script 2: `train.py`
 
-Trains a model for OCR using CNN-architecture. Batch size is set to 32 and learning rate to 0.001. Will print out running loss each epoch.
+Trains a model for OCR on MLTGPU. The model uses CNN-architecture. Batch size is set to 32 and learning rate to 0.001. Will print out running loss each epoch.
 Saves the model as a pth-file to **my_OCR_model.pth**.
 
 ```bash
