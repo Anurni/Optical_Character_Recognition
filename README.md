@@ -25,10 +25,16 @@ python train_validation_test_split.py /scratch/lt2326-2926-h24/ThaiOCR/ThaiOCR-T
 ```
 ## Script 2: `train.py`
 
-Trains a model for OCR using CNN-architecture. Batch size is set to 32 and learning rate to 0.001.
+Trains a model for OCR using CNN-architecture. Batch size is set to 32 and learning rate to 0.001. Will print out running loss each epoch.
 
 ```bash
 positional arguments:
   epochs         The number of epochs in the training loop of the model.
 
 ```
+Simply run by specifying the n of epochs:
+
+```bash
+python train.py 10
+```
+
