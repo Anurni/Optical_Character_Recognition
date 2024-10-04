@@ -1,7 +1,7 @@
 ## ﻿ADVANCED MACHINE LEARNING ASSIGNMENT 1: OCR - Anni Nieminen
 
 This repository holds my code for assignment 1 LT2326 (OCR for Thai and English).
-Below are instructions on how to run the scripts.
+Below, find instructions on how to run the scripts and also experiments followed by discussion.
 
 ## Script 1: `train_validation_test_split.py`
 
