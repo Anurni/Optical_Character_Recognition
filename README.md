@@ -50,6 +50,7 @@ python test.py
 ## Test runs, evaluation, and discussion
 
 ![Results of the model](https://github.com/Anurni/Optical_Character_Recognition/blob/main/OCR_results.png)
+
 Above, the results of some of the experiments with the model. All of these experiments were done with lr 0.001, number of epochs was 10 and batch size 32.
 The results of the experiments above were suprisinly good! Based on these runs, the model reached an average accuracy of 88%.
 However, experiments 8 and 9 proved that when the model is trained on characters using normal font and tested on italic font, the 
