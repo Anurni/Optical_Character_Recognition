@@ -5,7 +5,7 @@ Below are instructions on how to run the scripts.
 
 ## Script 1: `train_validation_test_split.py`
 
-This script splits the data at the given directory into training, validation, and test sets. If the user wishes to test their model on a different resolution or style than what was used to generate the training data, they can specify different arguments for the testing data. If not, input the same arguments for the testing data.
+This script splits the data at the given directory into training, validation, and test sets. If the user wishes to test their model on a different resolution or style than what was used to generate the training data, they can specify different arguments for the testing data. If they wish to use the same arguments for testing data, the same arguments need to be given for the testing data.
 
 ```bash
 positional arguments:
@@ -50,5 +50,24 @@ python test.py
 ## Test runs, evaluation, and discussion
 
 ![Results of the model](https://github.com/Anurni/Optical_Character_Recognition/blob/main/OCR_results.png)
+Above, the results of some of the experiments with the model. All of these experiments were done with lr 0.001, number of epochs was 10 and batch size 32.
+The results of the experiments above were suprisinly good! Based on these runs, the model reached an average accuracy of 88%.
+However, experiments 8 and 9 proved that when the model is trained on characters using normal font and tested on italic font, the 
+perfomance decreases significantly.
+Our model has two convolutional layers, and also uses max pooling after the conv layer and activation function (ReLU). The images in this
+dataset are relatively simple, as they are black and white. Furthermore, I suspect that our model's convolutional layers output relatively many channels for 
+this type of data (second Conv2D layer produces 64 channels). 
 
+## Challenges
+
+Learning about how to work with data without having access to it on my local was quite time-consuming, but I have learnt a lot about using the GPU during this assignment. 
+Splitting the data proved to be one of the most challenging parts of this assignment. I had many frustrations with separating "bold" from "bold_italic" since trying to match the user argument somehow like this
+
+```bash
+if user_style in root
+```
+simply would not work due to 'bold' matching both 'bold' and 'bold_italic' styles.
+
+Another challenge was deciding how to allow the test dataset settings (user arguments) differ from those of the training set, in order to run the required experiments. Granted that there probably could have been a more creative way of doing this,
+I simply decided to add more command line arguments to the splitting script. I compensated this by trying to make the help message as crear as possible. Obviously this solution added quite many new lines to the splitting script.
 
