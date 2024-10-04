@@ -69,6 +69,10 @@ if user_style in root
 ```
 simply would not work due to 'bold' matching both 'bold' and 'bold_italic' styles.
 
+In the data directory, there were also these mysterical 'Thumbs' files, that I decided to discard from the training, validation and test sets in the data splitting script:
+
+![Results of the model](https://github.com/Anurni/Optical_Character_Recognition/blob/main/thumbs.png)
+
 Another challenge was deciding how to allow the test dataset settings (user arguments) differ from those of the training set, in order to run the required experiments. Granted that there probably could have been a more creative way of doing this,
 I simply decided to add more command line arguments to the splitting script. I compensated this by trying to make the help message as crear as possible. Obviously this solution added quite many new lines to the splitting script.
 
